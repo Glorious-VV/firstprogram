@@ -1,18 +1,27 @@
+import java.util.Scanner; 
 class Main {
 
   public static void main(String[] args) {
     
-    System.out.println("Enter two numbers: ");
-    int first = 10;
-    int second = 20;
-    int third=30;
-     int fourth=30;
-    System.out.println(first + " " + second);
-    System.out.println(third+ " " + fourth);
     
-    int sum = first + second;
-    System.out.println("The sum is: " + sum);
-    int sum2 = third+ fourth;
-    System.out.println("The sum is: " + sum2);
+    int a,b,c,d,s1,s2,s3,s4;
+    Scanner sc = new Scanner(System.in);  
+    System.out.println("Enter 1st numbers: ");
+    a=sc.nextInt();
+    System.out.println("Enter 2nd numbers: ");
+    b=sc,nextInt();
+    System.out.println("Enter 3rd numbers: ");
+    c=sc.nextInt();
+    System.out.println("Enter 4th numbers: ");
+    d=sc.nextInt();
+    
+    s1=a+b;
+    s2=c+d;
+    s3=s1+s2;
+    s4=a+d;
+    System.out.println("1st= "+s1);
+    System.out.println("2st= "+s2);
+    System.out.println("3st= "+s3);
+    System.out.println("4st= "+s4);
   }
 }
